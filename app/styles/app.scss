@@ -47,10 +47,22 @@ img {
 
 .nav-links {
   display: inline-block;
+  margin-left: 200px;
 }
 
 .link {
   display: inline-block;
+  margin: 5px;
+}
+
+.link > a {
+  color: #0192B5;
+}
+
+.sign-in {
+  border: 1px solid #0192B5;
+  padding: 9px;
+  border-radius: 5%;
 }
 
 .categories {
@@ -64,5 +76,84 @@ img {
   font-size: 14px;
   padding: 7px;
   margin-top: 7px;
+}
 
+.results-list {
+  list-style: none;
+  padding-left: 15px;
+  color: #0192B5;
+  line-height: 1.75;
+  font-size: 14px;
+}
+
+.all-categories {
+  color: black;
+  margin-left: -10px;
+}
+
+.panel {
+  border: 1px solid lightgray;
+  width: 235px;
+  padding: 10px;
+  color: #0192B5;
+}
+
+.col-group {
+  margin-left: 40px;
+}
+
+.strong {
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.radio-label {
+  color: #0192B5;
+  font-weight: lighter;
+}
+
+.checkbox-label {
+  color: #0192B5;
+}
+
+.list-inline-item1 {
+  background-color: #F40B32;
+}
+
+.list-inline-item2 {
+  background-color: #FF7F00;
+}
+
+.list-inline-item3 {
+  background-color: #F3CC0C;
+}
+
+.list-inline-item4 {
+  background-color: #0AC20A;
+}
+
+.list-inline-item5 {
+  background-color: #0CCCF3;
+}
+
+.list-inline-item6 {
+  background-color: #A60CF3;
+}
+
+.list-inline-item7 {
+  background-color: black;
+}
+
+.colors {
+  height: 20px;
+  width: 20px;
+  border: 1px transparent;
+  border-radius: 10%;
+}
+
+.list-inline-item8 {
+  background-color: #FAFAFA;
+  border: 1px solid lightgray;
+  border-radius: 10%;
 }
