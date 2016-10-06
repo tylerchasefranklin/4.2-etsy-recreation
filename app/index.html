@@ -19,7 +19,10 @@
         <li class="link"><a href="#" class="sell">Sell On Etsy</a></li>
         <li class="link"><a href="#" class="register">Register</a></li>
         <li class="link"><a href="#" class="sign-in">Sign In</a></li>
-        <li class="link"><a href="#" class="cart"></a></li>
+        <button type="button cart" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><br>
+          <span class="cart-text">Cart</span>
+        </button>
       </ul>
     </header>
     <nav class="navbar navbar-default categories">
@@ -33,153 +36,176 @@
       <span class="category">Vintage</span>
     </nav>
     <section class="middle">
-    </section>
-      <div class="col-group float-left">
-        <h5>Show results for:</h5>
-        <div class="panel">
-          <ul class="results-list">
-            <li class="all-categories">All categories</li>
-            <li class="result-items">Art &amp Collectibles</li>
-            <li class="result-items">Home &amp Living</li>
-            <li class="result-items">Clothing</li>
-            <li class="result-items">Accessories</li>
-            <li class="result-items">Paper &amp Party Supplies</li>
-            <li class="result-items">Craft Supplies &amp Tools</li>
-            <li class="result-items">Books, Movies &amp Music</li>
-            <li class="result-items">Toys &amp Games</li>
-            <li class="result-items">Bags &amp Purses</li>
-            <li class="result-items">Jewelry</li>
-            <li class="result-items">Bath &amp Beauty</li>
-            <li class="result-items">Electronics &amp Accessories</li>
-            <li class="result-items">Weddings</li>
-            <li class="result-items">Pet Supplies</li>
-            <li class="result-items">Shoes</li>
-          </ul>
-        </div>
-      </div>
+      <div class="col-md-2 col-xs-2">
         <div class="col-group float-left">
-          <h5>Refine your search</h5>
+          <h5 class ="show-results">Show results for:</h5>
           <div class="panel">
-            <form id="search-filter-reset-form">
-              <div class>
-                <p class="strong">Shop Location</p>
-                <div class="clear">
-                  <label class="radio-custom">
-                    <input type="radio" name="locationQuery" class="radio" checked="checked">
-                    <a href="#" class="radio-label">Anywhere</a>
-                  </label>
-                  <label class="radio-custom">
-                    <input type="radio" class="radio-label" value="6252001">
-                    <a href="#" class="radio-label">United States</a>
-                  </label>
-                  <div class>
-                    <a href="#" class="change-location-query">Choose a custom location</a>
-                  </div>
-                </div>
-              </div>
-              <div class>
-                <p class="strong">Item Type</p>
-                <div class="clear">
-                  <label class="radio-custom">
-                    <input type="radio" class="radio" checked="checked">
-                    <a href="#" class="radio-label">All Items</a>
-                  </label>
-                  <label class="radio-custom">
-                    <input type="radio" class="radio">
-                    <a href="#" class="radio-label">Handmade</a>
-                  </label>
-                  <label class="radio-custom">
-                    <input type="radio" class="radio">
-                    <a href="#" class="radio-label">Vintage</a>
-                  </label>
-                </div>
-              </div>
-              <div class>
-                <p class="strong">Price ($)</p>
-                <div class="clear">
-                  <label for="" class="radio-custom">
-                    <input type="radio" class="radio" checked="checked">
-                    <a href="#" class="radio-label">Any Price</a>
-                  </label>
-                  <label for="" class="radio-custom">
-                    <input type="radio" class="radio">
-                    <a href="#" class="radio-label">Under $25</a>
-                  </label>
-                  <label for="" class="radio-custom">
-                    <input type="radio" class="radio">
-                    <a href="#" class="radio-label">$25 to $50</a>
-                  </label>
-                  <label for="" class="radio-custom">
-                    <input type="radio" class="radio">
-                    <a href="#" class="radio-label">$50 to $100</a>
-                  </label>
-                  <label for="" class="radio-custom">
-                    <input type="radio" class="radio">
-                    <a href="#" class="radio-label">Over $100</a>
-                  </label>
-                  <div class>
-                    <input type="text" placeholder="Low" class="input price-input">
-                  </div>
-                  <div class="float-left">
-                    <div class="align-with-btn">
-                      to
-                    </div>
-                    <div class>
-                      <input type="text" placeholder="High" class="input price-input">
-                    </div>
-                    <div class>
-                      <button class="btn">
-                        <span class="ss-icon">
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class>
-                <p class="strong">Filter By Color</p>
-                <div class="clear">
-                  <ul class="list-inline">
-                    <li class="colors list-inline-item1"></li>
-                    <li class="colors list-inline-item2"></li>
-                    <li class="colors list-inline-item3"></li>
-                    <li class="colors list-inline-item4"></li>
-                    <li class="colors list-inline-item5"></li>
-                    <li class="colors list-inline-item6"></li>
-                    <li class="colors list-inline-item7"></li>
-                    <li class="colors list-inline-item8"></li>
-                  </ul>
-                </div>
-              </div>
-              <div class>
-                <p class="strong">Ordering Options</p>
-                <div class="clear">
-                  <label class="checkbox-custom">
-                    <input type="checkbox" class="checkbox">
-                    <a href="#" class="checkbox-label">Accepts Etsy gift cards</a>
-                  </label>
-                  <label class="checkbox-custom">
-                    <input type="checkbox" class="checkbox">
-                    <a href="#" class="checkbox-label">Customizable</a>
-                  </label>
-                </div>
-              </div>
-              <div class>
-                <p class="strong">Ship To</p>
-                <div class="clear">
-                  <div class="locale-selector">
-                    <select name="ship_to" id="ship_to-Select" class="select select-custom">
-                      <option value="US" selected="selected">United States</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </form>
+            <ul class="results-list">
+              <li class="all-categories">All categories</li>
+              <li class="result-items">Art &amp Collectibles</li>
+              <li class="result-items">Home &amp Living</li>
+              <li class="result-items">Clothing</li>
+              <li class="result-items">Accessories</li>
+              <li class="result-items">Paper &amp Party Supplies</li>
+              <li class="result-items">Craft Supplies &amp Tools</li>
+              <li class="result-items">Books, Movies &amp Music</li>
+              <li class="result-items">Toys &amp Games</li>
+              <li class="result-items">Bags &amp Purses</li>
+              <li class="result-items">Jewelry</li>
+              <li class="result-items">Bath &amp Beauty</li>
+              <li class="result-items">Electronics &amp Accessories</li>
+              <li class="result-items">Weddings</li>
+              <li class="result-items">Pet Supplies</li>
+              <li class="result-items">Shoes</li>
+            </ul>
           </div>
         </div>
+          <div class="col-group float-left">
+            <h5>Refine your search</h5>
+            <div class="panel">
+              <form id="search-filter-reset-form">
+                <div class>
+                  <p class="strong">Shop Location</p>
+                  <div class="clear">
+                    <label class="radio-custom">
+                      <input type="radio" class="radio-label" checked="checked">
+                      <a href="#" class="radio-label">Anywhere</a>
+                    </label><br>
+                    <label class="radio-custom">
+                      <input type="radio" class="radio-label">
+                      <a href="#" class="radio-label">United States</a>
+                    </label>
+                    <div class>
+                      <a href="#" class="change-location-query">Choose a custom location</a>
+                    </div>
+                  </div>
+                </div>
+                <div class>
+                  <p class="strong">Item Type</p>
+                  <div class="clear">
+                    <label class="radio-custom">
+                      <input type="radio" class="radio-label" checked="checked">
+                      <a href="#" class="radio-label">All Items</a>
+                    </label><br>
+                    <label class="radio-custom">
+                      <input type="radio" class="radio-label">
+                      <a href="#" class="radio-label">Handmade</a>
+                    </label><br>
+                    <label class="radio-custom">
+                      <input type="radio" class="radio-label">
+                      <a href="#" class="radio-label">Vintage</a>
+                    </label><br>
+                  </div>
+                </div>
+                <div class>
+                  <p class="strong">Price ($)</p>
+                  <div class="clear">
+                    <label for="" class="radio-custom">
+                      <input type="radio" class="radio-label" checked="checked">
+                      <a href="#" class="radio-label">Any Price</a>
+                    </label><br>
+                    <label for="" class="radio-custom">
+                      <input type="radio" class="radio-label">
+                      <a href="#" class="radio-label">Under $25</a>
+                    </label><br>
+                    <label for="" class="radio-custom">
+                      <input type="radio" class="radio-label">
+                      <a href="#" class="radio-label">$25 to $50</a>
+                    </label><br>
+                    <label for="" class="radio-custom">
+                      <input type="radio" class="radio-label">
+                      <a href="#" class="radio-label">$50 to $100</a>
+                    </label><br>
+                    <label for="" class="radio-custom">
+                      <input type="radio" class="radio-label">
+                      <a href="#" class="radio-label">Over $100</a>
+                    </label><br>
+                    <div class>
+                      <input type="text" placeholder="Low" class="input">
+                    </div>
+                    <div class="float-left">
+                      <div class="align-with-btn">
+                        to
+                      </div>
+                      <div class>
+                        <input type="text" placeholder="High" class="input">
+                      </div>
+                      <!-- <div class>
+                        <button class="btn">
+                          <span class="ss-icon">
+                          </span>
+                        </button>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class>
+                  <p class="strong">Filter By Color</p>
+                  <div class="clear">
+                    <ul class="list-inline">
+                      <li class="colors list-inline-item1"></li>
+                      <li class="colors list-inline-item2"></li>
+                      <li class="colors list-inline-item3"></li>
+                      <li class="colors list-inline-item4"></li>
+                      <li class="colors list-inline-item5"></li>
+                      <li class="colors list-inline-item6"></li>
+                      <li class="colors list-inline-item7"></li>
+                      <li class="colors list-inline-item8"></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class>
+                  <p class="strong">Ordering Options</p>
+                  <div class="clear">
+                    <label class="checkbox-custom">
+                      <input type="checkbox" class="checkbox-label">
+                      <a href="#" class="checkbox-label">Accepts Etsy gift cards</a>
+                    </label>
+                    <label class="checkbox-custom">
+                      <input type="checkbox" class="checkbox-label">
+                      <a href="#" class="checkbox-label">Customizable</a>
+                    </label>
+                  </div>
+                </div>
+                <div class>
+                  <p class="strong">Ship To</p>
+                  <div class="clear">
+                    <div class="locale-selector">
+                      <select name="ship_to" id="ship_to-Select" class="select select-custom">
+                        <option value="US" selected="selected">United States</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+        <div id="tiles" class="container tiles">
+          <h5 class="tile-header">All categories <span>"spiderman"</span></h5>
+          <div class="row col-sm-10">
+            <ul class="products">
 
+            </ul>
+          </div>
+        </div>
+</section>
 
-
+    <script id="product-template" type="text/x-handlebars-template">
+      <li class="product col-sm-3">
+        <a href="{{url}}">
+          <img class="tile" src="{{Images.0.url_170x135}}" alt="{{name}}">
+          <div class="bottom-of-tile">
+            <div class="title">{{title}}</div>
+            <div class="source-and-price">
+              <div class="source">{{Shop.shop_name}}
+                <span class="price">${{price}}</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </script>
 
     <script src="js/bundle.js"></script>
   </body>

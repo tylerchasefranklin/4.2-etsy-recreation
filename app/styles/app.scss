@@ -16,6 +16,45 @@ img {
   max-width: 100%;
 }
 
+.tile {
+  min-width: 275px;
+  min-height: 225px;
+  padding-right: 50px;
+}
+
+.title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+.bottom-of-tile {
+  background-color: white;
+  min-width: 225px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.source {
+  color: lightgray;
+}
+
+.price {
+  color: #78C042;
+  float: right;
+}
+
+.products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tile-header {
+  margin-top: 0;
+}
+
 .top {
   margin: 15px auto;
 }
@@ -44,10 +83,28 @@ img {
   border: none;
 }
 
+.btn-default {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0;
+  line-height: .5;
+  border-color: lightgray;
+}
+
+.glyphicon {
+  margin-bottom: 5px;
+}
+
+.cart-text {
+  font-size: 10px;
+  color: gray;
+}
+
 
 .nav-links {
   display: inline-block;
-  margin-left: 200px;
+  margin-left: 650px;
 }
 
 .link {
@@ -93,13 +150,8 @@ img {
 
 .panel {
   border: 1px solid lightgray;
-  width: 235px;
   padding: 10px;
   color: #0192B5;
-}
-
-.col-group {
-  margin-left: 40px;
 }
 
 .strong {
@@ -113,8 +165,26 @@ img {
   font-weight: lighter;
 }
 
+.radio-custom {
+  display: inline-block;
+}
+
+.input {
+  width: 75px;
+  display: inline-block;
+  overflow: auto;
+}
+
 .checkbox-label {
   color: #0192B5;
+}
+
+.select {
+  -webkit-appearance: menulist-button;
+   height: 35px;
+   width: 100%;
+   border: 1px solid black;
+   color: black;
 }
 
 .list-inline-item1 {
@@ -156,4 +226,18 @@ img {
   background-color: #FAFAFA;
   border: 1px solid lightgray;
   border-radius: 10%;
+}
+
+.show-results {
+  margin-top: 0px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  border-bottom: 1px solid lightgray;
+}
+
+.middle {
+  background-color: #F5F5F1;
+  padding-top: 25px;
 }

@@ -1,6 +1,6 @@
 var $ = require('jquery');
 var _ = require('underscore');
-var handlebars = require('handlebars');
+var Handlebars = require('handlebars');
 /*
   (url: String, callback: Function) -> undefined
 
@@ -22,6 +22,7 @@ var handlebars = require('handlebars');
       fetchJSONP(url, logData);
 */
 var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=spiderman&includes=Images,Shop";
+var products;
 
 function fetchJSONP(url, callback) {
     var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
@@ -37,8 +38,23 @@ function fetchJSONP(url, callback) {
     document.body.appendChild(script);
 }
 
-function logData(data){
-  console.log(data);
+function logData(data) {
+  products = data.results;
+  console.log(products);
+  displayProducts(products);
 }
 
 fetchJSONP(url, logData);
+
+
+function displayProducts(productList){
+
+  var source = $('#product-template').html();
+  var productTemplate = Handlebars.compile(source);
+
+  _.each(productList, function(product){
+    var $productHtml = $(productTemplate(product));
+
+    $('.products').append($productHtml);
+  });
+}
